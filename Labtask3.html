@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Labtask3.css" >
+</head>
+<body>
+    <h1></h1>
+    <form action="/register" method="POST">
+    <h2>Donor Information</h2>
+    
+    <label for="firstname">First Name</label>
+    <input  type="text" id="firstname" name="firstname" required>  
+     
+    <label for="lastname">Last Name</label>
+    <input  type="text" id="lastname" name="lastname" required>  
+    
+
+    <label for="company">Company</label>
+    <input  type="text" id="company" name="company" required>  
+    
+  <label for="address1">Address 1</label>
+    <input  type="text" id="address1" name="address1" required>  
+    
+    <label for="address2">Address 2</label>
+    <input  type="text" id="address2" name="address2" required> 
+    
+    <label for="city">City</label>
+    <input  type="text" id="city" name="city" required>  
+    
+    <label for="state">State</label>
+    <input  type="" id="state" name="state" required>  
+    
+    <label for="zipcode">Zip Code</label>
+    <input  type="text" id="zipcode" name="zipcode" required>  
+    
+     <label for="country">Country</label>
+    <select id="country" name="country" required>
+       
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="USA">USA</option>
+        <option value="India">India</option>
+        <option value="UK">UK   </option>
+         
+    </select> 
+    
+    <label for="phone">Phone</label>
+    <input  type="text" id="phone" name="phone" >
+    
+    <label for="fax">Fax</label>
+    <input  type="text" id="fax" name="fax" > 
+    
+    <label for="email">Email</label>
+    <input  type="text" id="email" name="email" required>
+     
+    <label>Donation Amount</label>
+    <div class="Donation">
+        <input type="radio" id="amount" name="gender" value="Male" required>
+
+        <label for="male">None</label>
+         
+       <input type="radio" id="$50" name="hmm'" required>
+         <label for="male">$50</label>
+          
+         <input type="radio" id="75" name="amount" required>
+         <label for="male">$75</label>
+
+         <input type="radio" id="100" name="amount" required>
+         <label for="male">$100</label>
+        
+         <input type="radio" id="$120" name="gender" required>
+         <label for="male">$120</label>
+     
+    </div>
+
+
+<h4>Honorarium memorial donation Information</h4>
+
+    <label for="honor">I would like to make this donation </label>
+    <input type="radio" id="honor" name="honor" required>
+
+      <label for="name">Name</label>
+    <input  type="text" id="name" name="name" >
+    
+    <label for="adt">Acknowledge Donation to</label>
+    <input  type="text" id="adt" name="adt" >
+    
+    <label for="address">Address</label>
+    <input  type="text" id="address" name="address" required>
+
+    
+
+   
+
+    <label for="term">
+        <input type="checkbox" id="terms" name="terms" required>
+        I agree to the terms and condition.
+        </label>
+
+
+        
+    <button type="submit"> Submit</button>
+    </form>
+    
+</body>
+</html>
