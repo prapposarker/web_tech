@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="AdmissionForm.css" >
+</head>
+<body>
+    <h1>Admission Form</h1>
+    <div class="personalinfo">
+        <form action="/submit-form" method="post">
+        <fieldset>
+        <legend>Name </legend>
+
+    <label for="firstname">First Name</label>
+    <input  type="text" id="firstname" name="firstname" required>
+    
+    <label for="secondname">Second Name</label>
+    <input  type="text" id="secondname" name="secondname" required>
+     </fieldset>
+     <fieldset>
+    <label for="nid">NID Number</label>
+    </fieldset>
+    <fieldset>
+
+        <legend>
+    <input  type="text" id="nid" name="nid" required>  
+
+     <label for="address1">Address 1</label>
+    <input  type="text" id="address1" name="address1" required>  
+    
+    <label for="address2">Address 2</label>
+    <input  type="text" id="address2" name="address2" required> 
+    
+    <label for="city">City</label>
+    <input  type="text" id="city" name="city" required> 
+    </fieldset>
+
+    
+   
+     </fieldset>
+     </div>
+    
+    <div class="mail">
+        <legend>
+        <label for="email">Enter Email : </label>
+    <input  type="email" id="email" name="email" required> 
+    </legend>
+    </div>
+     
+    <div class="gender">
+        
+         <input type="radio" id="male" name="gender" required>
+         <label for="male">MALE</label>
+
+         <input type="radio" id="female" name="gender" required>
+         <label for="female">FEMALE</label>
+         
+
+    </div>
+      <select id="course" name="course" required>
+       
+        <option value="cse">CSE</option>
+        <option value="eee">EEE</option>
+        <option value="bba">BBA</option>
+        <option value="law">LAW</option>
+         
+    </select>
+
+
+</body>
+</html>

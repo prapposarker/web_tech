@@ -1,0 +1,43 @@
+body
+{
+  font-family: Arial, sans-serif;
+  background-color: cornsilk;
+  align-items:baseline;
+  height: 800vh;
+  margin: 0;
+}
+form
+  {
+    background-color: #8db2bc;
+    padding: 25px 45px;
+    border-radius: 40px;
+    box-shadow:black;
+    width: 40%;
+    margin: 0 auto;
+  
+  }
+   label
+ {
+    display:block;
+    margin-bottom: 6px;
+    color:black;
+    font-weight: bold;
+    font-size: small;
+
+ }
+ .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+  .personalinfo label
+  {  
+    width: 40%;
+
+  }
+  .personalinfo input
+  {
+    width: 30%;
+  }

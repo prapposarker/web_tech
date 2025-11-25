@@ -2,8 +2,6 @@ body
 {
   font-family: Arial, sans-serif;
   background-color: cornsilk;
-  display: flex;
-  justify-content: center;
   align-items:baseline;
   height: 800vh;
   margin: 0;
@@ -14,8 +12,8 @@ body
     padding: 25px 45px;
     border-radius: 40px;
     box-shadow:black;
-    width: 650px;
-
+    width: 40%;
+    margin: 0 auto;
   
   }
 h2 /*for heading*/
@@ -103,3 +101,20 @@ button {
     }
   }
     
+.input-field {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.input-field label {
+  width: 15%;
+}
+
+.input-field input {
+  width: 50%;
+}
+
+.star {
+  color: red;
+}

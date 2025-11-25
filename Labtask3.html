@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="Labtask3.css" >
 </head>
 <body>
-    <h1></h1>
+    
     <form action="/register" method="POST">
     <h2>Donor Information</h2>
     
-    <label for="firstname">First Name</label>
-    <input  type="text" id="firstname" name="firstname" required>  
-     
+    <div class="input-field">
+        <label for="firstname">First Name<span class="star">*</span></label>
+        <input  type="text" id="firstname" name="firstname" required>  
+    </div>
+
+    <div class="input-field">
     <label for="lastname">Last Name</label>
     <input  type="text" id="lastname" name="lastname" required>  
-    
+    </div>
 
     <label for="company">Company</label>
     <input  type="text" id="company" name="company" required>  
@@ -77,9 +80,10 @@
 
 
 <h4>Honorarium memorial donation Information</h4>
-
+    <div class="input-field">
     <label for="honor">I would like to make this donation </label>
     <input type="radio" id="honor" name="honor" required>
+    </div>
 
       <label for="name">Name</label>
     <input  type="text" id="name" name="name" >
