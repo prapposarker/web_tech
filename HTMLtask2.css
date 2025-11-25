@@ -1,0 +1,110 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+
+
+            max-width: 800px;
+            
+            margin: 0 auto;
+            
+            padding: 20px;
+            
+            background-color: #fff;
+            
+            border-radius: 8px;
+            
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        
+        }
+        fieldset
+         {
+         
+            border: 1px solid #ccc;
+         
+            border-radius: 5px;
+         
+            margin-bottom: 20px;
+         
+            padding: 15px;
+        
+        }
+        legend
+         {
+        
+            font-weight: bold;
+        
+            font-size: 1.2em;
+        
+            padding: 0 10px;
+        
+            color: #333;
+       
+        }
+       
+        .form-row {
+       
+            margin-bottom: 15px;
+       
+            display: flex;
+       
+            align-items: center;
+        }
+        .form-row label 
+        {
+            width: 150px; /* Fixed width for labels */
+            font-weight: bold;
+            padding-right: 10px;
+        }
+        .form-row input[type="text"],
+        .form-row input[type="email"],
+        .form-row input[type="date"],
+        .form-row select,
+        .form-row textarea 
+        {
+            flex: 1; /* Makes input fields take up remaining space */
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .radio-group label,
+        .checkbox-group label
+         {
+            width: auto; /* Override fixed width for radio/checkbox */
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        .radio-group input,
+        .checkbox-group input
+         {
+            margin-right: 5px;
+        }
+        .button-group 
+        {
+            text-align: center;
+        }
+        .button-group input
+         {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .button-group input[type="submit"]
+         {
+            background-color: #0056b3;
+            color: #fff;
+        }
+        .button-group input[type="reset"]
+         {
+            background-color: #6c757d;
+            color: #fff;
+        }

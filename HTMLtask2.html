@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Prappo">
+    
+    <meta name="description" content="Online admission form for new students at American International University-Bangladesh (AIUB).">
+    
+    <title>AIUB Online Admission Form</title>
+
+  <link rel="stylesheet" href="HTMLtask2.css">
+</head>
+<body>
+
+    <h1>AIUB University Admission Form</h1>
+    <p style="text-align: center;">Please fill out the form below to apply for admission.</p>
+
+    <form action="submit-admission.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required maxlength="100" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-row">
+                <label for="email_addr">Email Address:</label>
+                <input type="email" id="email_addr" name="email_addr" required placeholder="example@domain.com">
+            </div>
+
+            <div class="form-row">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-row radio-group">
+                <label>Gender:</label>
+                <input type="radio" id="gender_male" name="gender" value="male">
+                <label for="gender_male">Male</label>
+                
+                <input type="radio" id="gender_female" name="gender" value="female">
+                <label for="gender_female">Female</label>
+                
+                <input type="radio" id="gender_other" name="gender" value="other">
+                <label for="gender_other">Other</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <div class="form-row">
+                <label for="department">Preferred Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="cs">Department of Computer Science (CS)</option>
+                    <option value="cse">Department of Computer Science & Engineering (CSE)</option>
+                    <option value="eee">Department of Electrical & Electronic Engineering (EEE)</option>
+                    <option value="bba">Faculty of Business Administration (BBA)</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="hsc_gpa">HSC GPA:</label>
+                <input type="text" id="hsc_gpa" name="hsc_gpa" placeholder="e.g., 5.00" required>
+            </div>
+
+            <div class="form-row">
+                <label for="ssc_gpa">SSC GPA:</label>
+                <input type="text" id="ssc_gpa" name="ssc_gpa" placeholder="e.g., 5.00" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Documents and Interests</legend>
+
+            <div class="form-row checkbox-group">
+
+
+                <label>Interests:</label>
+
+                <input type="checkbox" id="interest_prog" name="interests[]" value="programming">
+
+
+                <label for="interest_prog">Programming</label>
+
+                
+                <input type="checkbox" id="interest_sports" name="interests[]" value="sports">
+
+
+                <label for="interest_sports">Sports</label>
+                
+
+                <input type="checkbox" id="interest_art" name="interests[]" value="art">
+
+        
+                <label for="interest_art">Art & Culture</label>
+ 
+                
+                <input type="checkbox" id="interest_debate" name="interests[]" value="debate">
+                
+                
+                <label for="interest_debate">Debating</label>
+            
+            
+            </div>
+            
+            <div class="form-row">
+            
+                <label for="transcript">Upload Transcript:</label>
+        
+                <input type="file" id="transcript" name="transcript" accept=".pdf,.jpg,.png" required>
+            
+            </div>
+
+            <div class="form-row">
+
+                <label for="statement">Personal Statement:</label>
+        
+                <textarea id="statement" name="statement" rows="5" placeholder="Tell us more about yourself..."></textarea>
+            
+            </div>
+
+        </fieldset>
+
+        <div class="button-group">
+            
+        
+            <input type="submit" value="Submit Application">
+        
+            <input type="reset" value="Clear Form">
+        
+        </div>
+
+    </form>
+
+</body>
+</html>
